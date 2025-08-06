@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singila Lodge: Strategic Marketing Pitch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- EDITABLE: Custom Color Palette from Logo --- */
+        :root {
+            --brand-blue: #4A5568; /* Deep Slate Blue */
+            --brand-coral: #F56565; /* Coral/Orange */
+            --brand-white: #F7FAFC; /* Off-white */
+            --text-dark: #2D3748;   /* Dark text for readability */
+            --text-light: #EDF2F7;  /* Light text for dark backgrounds */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #E2E8F0; /* A slightly darker background to make the white pop */
+        }
+        .slide {
+            display: none;
+            min-height: 70vh; /* Maintain a good height for slides */
+        }
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .custom-table th, .custom-table td {
+            border: 1px solid #CBD5E0;
+            padding: 1rem;
+            text-align: left;
+        }
+        .custom-table th {
+            background-color: var(--brand-white);
+        }
+        .schedule-table td {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .schedule-phase {
+            font-weight: bold;
+            color: var(--brand-blue);
+        }
+        
+        /* --- Applying Custom Colors --- */
+        .bg-brand-blue { background-color: var(--brand-blue); }
+        .bg-brand-coral { background-color: var(--brand-coral); }
+        .bg-brand-white { background-color: var(--brand-white); }
+        .text-brand-blue { color: var(--brand-blue); }
+        .text-brand-coral { color: var(--brand-coral); }
+        .text-brand-dark { color: var(--text-dark); }
+        .text-brand-light { color: var(--text-light); }
+        .border-brand-coral { border-color: var(--brand-coral); }
+        .hover\:bg-brand-coral-dark:hover { background-color: #E53E3E; }
+
+        /* --- ✨ Responsive Adjustments for Mobile ✨ --- */
+        @media (max-width: 640px) {
+            /* Reduce padding and font size in the competitive table for small screens */
+            .custom-table th, .custom-table td {
+                padding: 0.5rem;
+                font-size: 0.8rem; /* Smaller than text-sm */
+                line-height: 1.2;
+            }
+
+            /* Stack the columns of the schedule table on small screens */
+            .schedule-table tr {
+                display: flex;
+                flex-direction: column;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            .schedule-table td {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+            .schedule-phase {
+                padding-bottom: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-2 sm:p-4">
+
+    <div class="w-full max-w-5xl bg-white rounded-xl shadow-2xl overflow-hidden">
+        <header class="bg-brand-blue text-brand-light p-4 flex justify-center items-center">
+             <h1 class="text-lg md:text-2xl font-bold text-center">Singila Lodge: Strategic Marketing Pitch</h1>
+        </header>
+
+        <main id="slides-container" class="p-4 sm:p-6 md:p-10">
+            <div class="slide active justify-center items-center text-center">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-blue mb-4">A Strategic Marketing Blueprint for Singila Lodge</h1>
+                <p class="text-lg sm:text-xl lg:text-2xl text-brand-dark">Positioning for Peak Season Success in Tofo, Mozambique</p>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">The Strategic Imperative</h2>
+                <div class="grid md:grid-cols-3 gap-6 text-base sm:text-lg">
+                    <div class="bg-brand-white p-4 sm:p-6 rounded-lg border-l-4 border-brand-blue">
+                        <h3 class="font-bold text-xl mb-2 text-brand-blue">Our Situation:</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Dynamic, post-pandemic market.</li>
+                            <li>Mature, segmented competition.</li>
+                            <li>Location perceived as remote.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-white p-4 sm:p-6 rounded-lg border-l-4 border-green-500">
+                        <h3 class="font-bold text-xl mb-2 text-green-700">Our Goal:</h3>
+                        <p>To transform our perceived weakness into our primary strength.</p>
+                    </div>
+                    <div class="bg-brand-white p-4 sm:p-6 rounded-lg border-l-4 border-brand-coral">
+                        <h3 class="font-bold text-xl mb-2 text-brand-coral">Our Strategy:</h3>
+                        <p>Pivot our brand to become the definitive <strong>"Tranquil Retreat"</strong> in Tofo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">Understanding the Tofo Market</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-brand-dark">A Market in Vigorous Expansion</h3>
+                        <div class="flex flex-col md:flex-row gap-4 mt-2 items-center">
+                            <p class="text-3xl sm:text-4xl font-bold text-green-600">$75.1M</p>
+                            <p class="text-base sm:text-lg text-brand-dark">in tourism revenue in H1 2024 (a 43.2% increase YoY).</p>
+                        </div>
+                         <div class="flex flex-col md:flex-row gap-4 mt-4 items-center">
+                            <p class="text-3xl sm:text-4xl font-bold text-green-600">$597M</p>
+                            <p class="text-base sm:text-lg text-brand-dark">invested in 197 regional tourism projects over 5 years.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-brand-dark">The "Tofo Vibe"</h3>
+                        <p class="text-base sm:text-lg text-brand-dark mt-2">Core appeal is a "friendly, laid-back vibe" blending adventure with authentic local culture. Visitors are "Authenticity Seekers" who value cultural immersion.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">Profiling Our Target Audience</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-brand-dark mb-3">Who Comes to Tofo?</h3>
+                        <p class="text-base sm:text-lg mb-2"><strong class="text-brand-blue">Primary Source Market:</strong> South Africa (33.5% of visitors).</p>
+                        <p class="text-base sm:text-lg"><strong class="text-brand-blue">Primary Motivation:</strong> Leisure (65.5%), centered around key activities.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-brand-dark mb-3">Key Visitor Segments</h3>
+                        <ul class="list-decimal list-inside space-y-2 text-base sm:text-lg">
+                            <li>Divers & Snorkelers</li>
+                            <li>Surfers</li>
+                            <li>Overlanders & Self-Drivers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded-lg">
+                    <h3 class="font-bold text-lg sm:text-xl">Our Natural Fit</h3>
+                    <p class="mt-2 text-base sm:text-lg">Singila Lodge's spacious, value-driven family chalets with kitchenettes perfectly align with the needs of the <strong>South African self-drive family market</strong>.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                 <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">Decoding the December High Season</h2>
+                 <h3 class="text-xl sm:text-2xl font-semibold text-center text-brand-dark mb-6">The December Paradox</h3>
+                 <div class="grid md:grid-cols-3 gap-6 text-center">
+                     <div class="p-4 rounded-lg bg-red-50">
+                         <p class="text-5xl mb-2">🌧️</p>
+                         <h4 class="font-bold text-lg sm:text-xl">Suboptimal Weather</h4>
+                         <p class="text-sm sm:text-base">Start of the hot, wet season.</p>
+                     </div>
+                     <div class="p-4 rounded-lg bg-green-50">
+                         <p class="text-5xl mb-2">📈</p>
+                         <h4 class="font-bold text-lg sm:text-xl">Peak Demand</h4>
+                         <p class="text-sm sm:text-base">Driven by SA school holidays.</p>
+                     </div>
+                     <div class="p-4 rounded-lg bg-blue-50">
+                         <p class="text-5xl mb-2">💡</p>
+                         <h4 class="font-bold text-lg sm:text-xl">The Insight</h4>
+                         <p class="text-sm sm:text-base">Focus on the quality of the experience, rain or shine.</p>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">December's Unmissable Attractions</h2>
+                <div class="text-center bg-yellow-100 p-4 rounded-lg mb-6">
+                    <p class="text-lg sm:text-xl font-bold text-yellow-800">"While the weather is variable, the marine life is exceptional."</p>
+                    <p class="text-base sm:text-lg text-yellow-700">This is our key marketing message for December.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 text-center">
+                    <div class="bg-blue-50 p-4 sm:p-6 rounded-lg">
+                        <p class="text-5xl mb-3">🐋</p>
+                        <h3 class="text-lg sm:text-xl font-bold">Whale Shark Peak Season</h3>
+                        <p class="text-gray-600 mt-1 text-sm sm:text-base">(Oct-Mar) A global hotspot for encounters.</p>
+                    </div>
+                    <div class="bg-green-50 p-4 sm:p-6 rounded-lg">
+                        <p class="text-5xl mb-3">🐢</p>
+                        <h3 class="text-lg sm:text-xl font-bold">Sea Turtle Nesting Season</h3>
+                        <p class="text-gray-600 mt-1 text-sm sm:text-base">(Starts Nov) A powerful, memorable spectacle.</p>
+                    </div>
+                </div>
+                <p class="mt-6 text-base sm:text-lg text-center font-semibold"><strong>Strategy:</strong> Pivot marketing from "sun & sand" to specific, time-sensitive ecotourism events.</p>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">The New Year's Eve Opportunity</h2>
+                <div class="grid md:grid-cols-2 gap-8 text-center">
+                    <div class="border-2 border-red-300 p-4 sm:p-6 rounded-lg">
+                        <h3 class="text-xl sm:text-2xl font-bold text-red-600">The "Party" Segment</h3>
+                        <p class="text-base sm:text-lg mt-2">Tofo center is a major NYE hub for a young, high-energy crowd.</p>
+                    </div>
+                    <div class="border-2 border-green-300 p-4 sm:p-6 rounded-lg">
+                        <h3 class="text-xl sm:text-2xl font-bold text-green-600">The "Peace" Segment</h3>
+                        <p class="text-base sm:text-lg mt-2">An underserved group of families and couples seeking to avoid the noise.</p>
+                    </div>
+                </div>
+                <div class="mt-8 bg-brand-white border-l-4 border-brand-coral p-4 sm:p-6 rounded-lg text-center">
+                    <h3 class="font-bold text-lg sm:text-xl text-brand-blue">Our Opportunity & Marketing Message</h3>
+                    <p class="mt-2 text-base sm:text-lg text-brand-dark">Position Singila as the anti-NYE-party destination. <br><strong class="text-brand-coral">"Escape the New Year's Noise. Welcome 2026 in Tranquility."</strong></p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">The Competitive Landscape</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full custom-table">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="font-semibold">Tier</th>
+                                <th class="font-semibold">Segment</th>
+                                <th class="font-semibold">Price</th>
+                                <th class="font-semibold">Target</th>
+                                <th class="font-semibold">Proposition</th>
+                                <th class="font-semibold">Players</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Luxury/Boutique</td>
+                                <td>$$$$</td>
+                                <td>Couples, Honeymooners</td>
+                                <td>Exclusivity & Style</td>
+                                <td>Baia Sonambula</td>
+                            </tr>
+                            <tr class="bg-orange-100">
+                                <td><strong>2</strong></td>
+                                <td><strong>Mid-Range/Self-Cater</strong></td>
+                                <td><strong>$$-$$$</strong></td>
+                                <td><strong>SA Families, Groups</strong></td>
+                                <td><strong>Flexibility & Value</strong></td>
+                                <td><strong>Singila Lodge, Casa Na Praia</strong></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Budget/Hostel</td>
+                                <td>$</td>
+                                <td>Youth, Backpackers</td>
+                                <td>Social Scene & Parties</td>
+                                <td>Mozambeat Motel</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                 <p class="mt-6 text-base sm:text-lg text-center font-semibold bg-yellow-100 p-4 rounded-lg"><strong>The Market Gap:</strong> A clear opening for a brand built around a <strong>quiet, authentic, family-focused retreat.</strong></p>
+            </div>
+
+            <div class="slide">
+                 <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">SWOT Analysis: Singila Lodge</h2>
+                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                     <div class="bg-green-100 p-4 rounded-lg">
+                         <h3 class="font-bold text-lg text-green-800 mb-2">Strengths</h3>
+                         <ul class="list-disc list-inside space-y-1 text-green-700">
+                             <li>Tranquil, Beachfront Location</li>
+                             <li>Excellent, Loving Staff</li>
+                             <li>High Standards of Cleanliness</li>
+                             <li>Strong Value Proposition</li>
+                             <li>Authentic Brand Story</li>
+                         </ul>
+                     </div>
+                     <div class="bg-red-100 p-4 rounded-lg">
+                         <h3 class="font-bold text-lg text-red-800 mb-2">Weaknesses</h3>
+                         <ul class="list-disc list-inside space-y-1 text-red-700">
+                             <li>Perceived Remote Location</li>
+                             <li>Limited On-Site Amenities</li>
+                             <li>Underdeveloped Marketing</li>
+                         </ul>
+                     </div>
+                     <div class="bg-blue-100 p-4 rounded-lg">
+                         <h3 class="font-bold text-lg text-blue-800 mb-2">Opportunities</h3>
+                         <ul class="list-disc list-inside space-y-1 text-blue-700">
+                             <li>Growing tourism market</li>
+                             <li>Target the "Peace" segment</li>
+                             <li>Focus on SA Family market</li>
+                             <li>Formalize partnerships</li>
+                         </ul>
+                     </div>
+                     <div class="bg-yellow-100 p-4 rounded-lg">
+                         <h3 class="font-bold text-lg text-yellow-800 mb-2">Threats</h3>
+                         <ul class="list-disc list-inside space-y-1 text-yellow-700">
+                             <li>Intense competition</li>
+                             <li>Premiumization trend</li>
+                             <li>Reliance on road access</li>
+                         </ul>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="slide justify-center">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">The Strategic Pivot</h2>
+                <div class="bg-brand-white p-4 sm:p-6 rounded-lg shadow-inner">
+                    <p class="text-base sm:text-lg italic text-brand-dark">"For families and couples from the South African self-drive market seeking an authentic Mozambican holiday, Singila Lodge is the <strong class="text-green-600">tranquil retreat</strong> that offers spacious, value-driven accommodation and heartfelt service, allowing you to connect with nature and each other, <strong class="text-brand-coral">away from the festive crowds.</strong>"</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">Bringing the Vision to Life</h2>
+                <div class="grid md:grid-cols-3 gap-6 text-base sm:text-lg">
+                    <div class="bg-brand-white p-4 sm:p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-2">Imagery:</h3>
+                        <p>Focus on peace and connection. Empty beaches, family moments, staff portraits. <strong>No party scenes.</strong></p>
+                    </div>
+                    <div class="bg-brand-white p-4 sm:p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-2">Copywriting:</h3>
+                        <p>Use keywords like "serene," "escape," "unwind," "private," and "authentic."</p>
+                    </div>
+                    <div class="bg-brand-white p-4 sm:p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-2">Offerings:</h3>
+                        <p>Develop packages like a "Family Digital Detox" or "Couples' Serenity Escape."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">Marketing Action Plan</h2>
+                <div class="text-center mb-6">
+                    <p class="text-xl sm:text-2xl font-semibold text-brand-dark">Campaign Theme:</p>
+                    <p class="text-2xl sm:text-3xl font-bold text-brand-coral">"Tofo's Gentle Giants & Quiet Nights"</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 text-sm sm:text-base">
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Key Messaging Pillars:</h3>
+                        <ul class="list-decimal list-inside space-y-2">
+                            <li>Escape the Crowds</li>
+                            <li>A Season of Giants</li>
+                            <li>Space to Connect</li>
+                            <li>The Heart of Singila</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Promotional Offers:</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>"Festive Family Adventure Package"</li>
+                            <li>"Whale Shark Wonders Escape"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">Channel Strategy: Digital Presence</h2>
+                <div class="space-y-6 text-sm sm:text-base">
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-brand-dark">Website (singilalodge.com)</h3>
+                        <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                            <li>Update homepage to "Tranquil Retreat" theme.</li>
+                            <li>Create "Festive Season in Tofo" landing page.</li>
+                            <li>Write blog posts on wildlife and location benefits.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-brand-dark">Social Media (Instagram & Facebook)</h3>
+                         <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                            <li><strong>Instagram:</strong> Visuals of nature, tranquility, authentic moments.</li>
+                            <li><strong>Facebook:</strong> Community focus, practical info, storytelling.</li>
+                            <li><strong>Targeted Ads:</strong> Run package ads to families in Gauteng & Mpumalanga.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">Campaign Objectives & Goals</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-brand-white p-4 sm:p-6 rounded-lg">
+                        <h3 class="text-xl sm:text-2xl font-bold text-brand-coral mb-3">Our Primary Goals</h3>
+                        <p class="text-base sm:text-lg mb-2"><strong>Goal 1:</strong> Increase qualified leads by over 25%.</p>
+                        <p class="text-base sm:text-lg"><strong>Goal 2:</strong> Increase confirmed bookings by over 50% for the campaign period.</p>
+                    </div>
+                    <div class="bg-brand-white p-4 sm:p-6 rounded-lg">
+                        <h3 class="text-xl sm:text-2xl font-bold text-brand-blue mb-3">How We'll Achieve Them</h3>
+                        <ul class="list-disc list-inside space-y-2 text-base sm:text-lg">
+                            <li><strong>Attract the Right Audience:</strong> By focusing on the "Tranquil Retreat" message.</li>
+                            <li><strong>Create Urgency:</strong> Promoting time-sensitive wildlife events and early-bird offers.</li>
+                            <li><strong>Build Trust:</strong> Highlighting our strengths like staff, cleanliness, and authenticity.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                 <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 border-b-2 border-gray-200 pb-2">Campaign Schedule</h2>
+                 <div class="overflow-x-auto text-sm sm:text-base">
+                    <table class="w-full schedule-table">
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="w-full md:w-1/3 schedule-phase">Phase 1: Awareness & Early Bird<br>(Sep - Oct 2025)</td>
+                                <td>
+                                    <ul class="list-disc list-inside space-y-1">
+                                        <li>Launch updated website & "Festive Season" page.</li>
+                                        <li>Begin consistent Social Media posting (3x week).</li>
+                                        <li>Launch "Festive Family Adventure" early bird package.</li>
+                                        <li>Run initial, low-cost Facebook ads to build audience.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="schedule-phase">Phase 2: Peak Booking & Content Push<br>(Nov - Dec 2025)</td>
+                                <td>
+                                     <ul class="list-disc list-inside space-y-1">
+                                        <li>Intensify social content on whale sharks & turtles.</li>
+                                        <li>Launch main Facebook Ad campaign with booking objective.</li>
+                                        <li>Send reminder emails for early-bird deadline.</li>
+                                        <li>Focus on "Escape the NYE crowds" messaging.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="schedule-phase">Phase 3: Last Minute & Season Extension<br>(Jan 2026)</td>
+                                <td>
+                                     <ul class="list-disc list-inside space-y-1">
+                                        <li>Promote any last-minute availability for January.</li>
+                                        <li>Shift social content to showcase "green season" scenery.</li>
+                                        <li>Gather and share user-generated content from guests.</li>
+                                        <li>Launch a "Beat the Rush" promo for Feb/March.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 </div>
+            </div>
+            
+            <div class="slide justify-center items-center text-center">
+                 <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-8">Next Steps & Discussion</h2>
+                 <ol class="text-base sm:text-lg md:text-xl space-y-4 list-decimal list-inside text-left mx-auto">
+                     <li>Finalize Campaign Messaging & Visuals.</li>
+                     <li>Update Digital Assets (Website & Socials).</li>
+                     <li>Launch Promotional Offers & Packages per schedule.</li>
+                     <li>Execute Targeted Facebook Ad Campaign.</li>
+                 </ol>
+                 <h3 class="mt-12 text-3xl sm:text-4xl font-bold text-brand-dark">Questions?</h3>
+            </div>
+        </main>
+
+        <footer class="bg-brand-blue p-3 sm:p-4 flex justify-between items-center">
+            <button id="prevBtn" class="bg-gray-600 hover:bg-gray-500 text-white font-bold py-2 px-3 sm:px-4 rounded-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                Prev
+            </button>
+            <div id="slide-counter" class="text-white text-sm font-medium">
+                Slide 1 / 16
+            </div>
+            <button id="nextBtn" class="bg-brand-coral hover:bg-brand-coral-dark text-white font-bold py-2 px-3 sm:px-4 rounded-lg transition duration-300">
+                Next
+            </button>
+        </footer>
+    </div>
+
+    <script>
+        // --- DOM Elements ---
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slide-counter');
+        
+        // --- State ---
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        // --- Functions ---
+        function updateDisplay() {
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentSlide);
+            });
+            slideCounter.textContent = `Slide ${currentSlide + 1} / ${totalSlides}`;
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === totalSlides - 1;
+        }
+
+        function goToNextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateDisplay();
+            }
+        }
+
+        function goToPrevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateDisplay();
+            }
+        }
+
+        // --- Event Listeners ---
+        nextBtn.addEventListener('click', goToNextSlide);
+        prevBtn.addEventListener('click', goToPrevSlide);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') goToNextSlide();
+            if (e.key === 'ArrowLeft') goToPrevSlide();
+        });
+
+        // --- Initial Setup ---
+        updateDisplay();
+    </script>
+
+</body>
+</html>
